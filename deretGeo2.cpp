@@ -19,4 +19,5 @@ sp=sp*r;
 }
 cout<<endl;
 cout<<"jml deret="<<jd;
+cout<<"\n";
 }
