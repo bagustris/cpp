@@ -1,21 +1,15 @@
-/* array.cpp
- * array.cpp : demoed array
- * 04/24/2015
- * bagustris, bagustris@yahoo.com
- */
-
 #include <iostream>
 using namespace std;
 
 int main()
 {
-  int sample[10];
-  int t;
-
-  for(t=0; t<10; t++)
-  sample[t]=t;
-
-    for(t=0; t<10; t++)
-      cout<<"this is sample[" << t << "]" << sample[t] << "\n";
-  return 0;
+    int i, a[4];
+    a[0]=0;
+    a[1]=1;
+    a[2]=5;
+    a[3]=10;
+    for(i=0; i<4; i++)
+        cout<<a[i]<<" ";
+    cout<<endl;
+    return 0;
 }
