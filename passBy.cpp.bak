@@ -1,0 +1,37 @@
+#include <iostream>
+using namespace std;
+
+void call_by_value(int p) { // :2
+    p = 42;
+}
+
+// passes an integer by reference
+void call_by_reference(int & p) { // :3
+    p = 42;
+}
+
+// this is the java style of passing references. NULL is called "null" there.
+void call_by_value_special(int *p) { // :4
+    *p = 10; // changes what p points to ("what p references" in java)
+    // only changes the value of the parameter, but *not* of 
+    // the argument passed by the caller. thus it's pass-by-value:
+    p = NULL;
+}
+
+int main() {
+    int value = 10;
+    int *pointer = &value;
+
+    call_by_value(pointer); // :1
+    assert(pointer == &value); // pointer was copied
+
+    call_by_value(value); // :2
+    assert(value == 10); // value was copied
+
+    call_by_reference(value); // :3
+    assert(value == 42); // value was passed by reference
+
+    call_by_value_special(pointer); // :4
+    // pointer was copied but what pointer references was changed.
+    assert(value == 10 && pointer == &value);
+}
