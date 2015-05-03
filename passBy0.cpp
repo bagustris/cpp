@@ -4,7 +4,7 @@ using namespace std;
 void by_val(int arg) { 
     arg += 2; 
 }
-void by_ref(int&arg) { 
+void by_ref(int &arg) { 
     arg += 2; 
 }
 
