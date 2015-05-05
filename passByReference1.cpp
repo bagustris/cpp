@@ -27,13 +27,13 @@ int main ()
     int val5 = 0, val6 = 0;
 
     ValTest(val1, val2);
-    cout << "val1 = " << val1 << ", val2 = " << val2 << endl;
+    cout << "val1 = " << val1 << ", val2 = " << val2 << endl;	//0 0
 
     PtrTest(&val3, &val4);
-    cout << "val3 = " << val3 << ", val4 = " << val4 << endl;
+    cout << "val3 = " << val3 << ", val4 = " << val4 << endl;	//55 66   /dir	dir
 
     RefTest(val5, val6);
-    cout << "val5 = " << val5 << ", val6 = " << val6 << endl;
+    cout << "val5 = " << val5 << ", val6 = " << val6 << endl;	//77 88
 
     return(0);
 }

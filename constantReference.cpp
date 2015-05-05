@@ -3,7 +3,7 @@ using namespace std;
 
 void doit(const int &x)
 {
-   // x=5;
+    // x=5;
 }
 
 int main()
