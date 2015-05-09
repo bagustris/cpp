@@ -8,7 +8,7 @@ int main()
     {
         for(i=0; i<4; i++)
         {
-            nums[t][i]=(t*4)+i+1;
+            nums[t][i]=(t*5)+i+5;
             cout<<nums[t][i]<<' ';
         }
         cout<<endl;

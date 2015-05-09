@@ -1,19 +1,10 @@
 // fungsi2.c : demo fungsi dengan input dan do-while
 #include <iostream>
-
 using namespace std;
 
-// prototype
+// prototype;
 int positifInt();
 
-int main(void)
-{
-    int n = positifInt();
-    cout<<"Terima kasih atas "<<n<"-nya";
-    cout<<"\n";
-}
-
-// meminta input positive dari user
 int positifInt(void) 
 {
     int n;
@@ -25,3 +16,15 @@ int positifInt(void)
     while (n < 1);
     return n;
 }
+
+
+
+int main(void)
+{
+    int n = positifInt();
+    cout<<"Terima kasih atas "<<n<"-nya";
+    cout<<"\n";
+}
+
+// meminta input positive dari user
+
