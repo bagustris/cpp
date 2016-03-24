@@ -12,7 +12,7 @@ public:
 };
 
 int main() {
-    Vector vec1;
+    class Vector vec1;
     vec1.Start.x = 3.0;
     vec1.Start.y = 4.0;
     vec1.End.x = 5.0;

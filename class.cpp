@@ -1,6 +1,7 @@
 #include <iostream>
 
 class Vector {
+public:
     double xStartx;
     double xEnd;
     double yStartx;

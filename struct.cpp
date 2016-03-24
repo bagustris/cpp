@@ -1,19 +1,21 @@
 #include <iostream>
 #include <cstring>
 using namespace std;
-void printBook( struct Books book );
+void printBook(struct Books book); //prototype
+
 struct Books
 {
-char title[50];
-char author[50];
-char subject[100];
-int
-book_id;
+	char title[50];
+	char author[50];
+	char subject[100];
+	int book_id;
 };
-int main( )
+
+int main()
 {
 struct Books Book1;
 struct Books Book2;
+struct Books Book3;
 // Declare Book1 of type Book
 // Declare Book2 of type Book
 // book 1 specification
@@ -26,13 +28,20 @@ strcpy( Book2.title, "Telecom Billing");
 strcpy( Book2.author, "Yakit Singha");
 strcpy( Book2.subject, "Telecom");
 Book2.book_id = 6495700;
+//book 3
+strcpy( Book3.title, "Telecom Billing");
+strcpy( Book3.author, "Yakit Singha");
+strcpy( Book3.subject, "Telecom");
+Book3.book_id = 6495701;
 // Print Book1 info
 printBook( Book1 );
 // Print Book2 info
 printBook( Book2 );
+printBook(Book3);
 return 0;
 }
-void printBook( struct Books book )
+
+void printBook(struct Books book)
 {
 cout << "Book title : " << book.title <<endl;
 cout << "Book author : " << book.author <<endl;
