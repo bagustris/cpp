@@ -1,3 +1,4 @@
+// demo parallel programming using OpenMP
 #include <iostream>
 #include <omp.h>
 
